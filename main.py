@@ -143,5 +143,5 @@ async def run_periodically():
         print("Waiting 1 minute before next run...")
         await asyncio.sleep(60)
 
-# For Jupyter Notebook
-await run_periodically()
+if __name__ == "__main__":
+    asyncio.run(run_periodically())
